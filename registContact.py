@@ -10,7 +10,7 @@ import testValue
 
 from popbill import ContactInfo, ClosedownService ,PopbillException
 
-closedownService =  ClosedownService(testValue.LinkID, testValue.SecretKey)
+closedownService = ClosedownService(testValue.LinkID, testValue.SecretKey)
 closedownService.IsTest = testValue.IsTest
 
 try:
@@ -26,7 +26,7 @@ try:
     newContact = ContactInfo (
 
         # 아이디
-        id = "testkorea_1117",
+        id = "testkorea",
 
         # 비밀번호
         pwd = "this_is_password",

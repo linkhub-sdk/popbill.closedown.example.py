@@ -10,7 +10,7 @@ import testValue
 
 from popbill import ClosedownService, PopbillException
 
-closedownService =  ClosedownService(testValue.LinkID, testValue.SecretKey)
+closedownService = ClosedownService(testValue.LinkID, testValue.SecretKey)
 closedownService.IsTest = testValue.IsTest
 
 '''

@@ -10,7 +10,7 @@ import testValue
 
 from popbill import ClosedownService, PopbillException
 
-closedownService =  ClosedownService(testValue.LinkID, testValue.SecretKey)
+closedownService = ClosedownService(testValue.LinkID, testValue.SecretKey)
 closedownService.IsTest = testValue.IsTest
 
 '''
@@ -18,10 +18,6 @@ closedownService.IsTest = testValue.IsTest
 '''
 
 try:
-    print("휴폐업조회 - 단건")
-    print("state (휴폐업상태) : None-알수없음, 0-등록되지 않은 사업자번호, 1-사업중, 2-폐업, 3-휴업")
-    print("type (사업유형) : None-알수없음, 1-일반과세자, 2-면세과세자, 3-간이과세자, 4-비영리법인, 국가기관\n")
-
     # 팝빌회원 사업자번호
     CorpNum = testValue.testCorpNum
 
@@ -30,6 +26,9 @@ try:
 
     corpState = closedownService.checkCorpNum(CorpNum, checkCorpNum)
 
+    print("휴폐업조회 - 단건")
+    print("state (휴폐업상태) : None-알수없음, 0-등록되지 않은 사업자번호, 1-사업중, 2-폐업, 3-휴업")
+    print("type (사업유형) : None-알수없음, 1-일반과세자, 2-면세과세자, 3-간이과세자, 4-비영리법인, 국가기관\n")
 
     for key, value in corpState.__dict__.items():
         if not key.startswith("__"):
