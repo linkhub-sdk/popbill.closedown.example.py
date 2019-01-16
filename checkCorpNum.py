@@ -2,9 +2,12 @@
 # code for console Encoding difference. Dont' mind on it
 import sys
 import imp
+
 imp.reload(sys)
-try: sys.setdefaultencoding('UTF8')
-except Exception as E: pass
+try:
+    sys.setdefaultencoding('UTF8')
+except Exception as E:
+    pass
 
 import testValue
 
@@ -22,21 +25,21 @@ try:
     CorpNum = testValue.testCorpNum
 
     # 조회할 사업자번호
-    checkCorpNum = "6798700433"
+    checkCorpNum = "1234567891"
 
     corpState = closedownService.checkCorpNum(CorpNum, checkCorpNum)
 
     print("=" * 15 + " 휴폐업조회 - 단건 " + "=" * 15)
     print("corpNum (조회 사업자번호)")
-    print("stateDate (휴폐업 일자)")
-    print("checkDate (국세청 확인일자)")
+    print("type (사업자 과세유형) : None-미확인, 1-일반과세자, 2-면세과세자, 3-간이과세자, 4-비영리법인, 국가기관")
     print("typeDate (과세유형 전환일자)")
-    print("state (휴폐업상태) : None-알수없음, 0-등록되지 않은 사업자번호, 1-사업중, 2-폐업, 3-휴업")
-    print("type (사업유형) : None-알수없음, 1-일반과세자, 2-면세과세자, 3-간이과세자, 4-비영리법인, 국가기관\n")
+    print("state (휴폐업상태) : None-미확인, 0-등록되지 않은 사업자번호, 1-사업중, 2-폐업, 3-휴업")
+    print("stateDate (휴폐업 일자)")
+    print("checkDate (확인일자)\n")
 
     for key, value in corpState.__dict__.items():
         if not key.startswith("__"):
-            print("%s : %s" % (key,value))
+            print("%s : %s" % (key, value))
 
 except PopbillException as PE:
-    print("Exception Occur : [%d] %s" % (PE.code , PE.message))
+    print("Exception Occur : [%d] %s" % (PE.code, PE.message))
