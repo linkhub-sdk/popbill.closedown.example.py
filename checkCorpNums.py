@@ -22,11 +22,11 @@ try:
     CorpNum = testValue.testCorpNum
 
     # 조회할 사업자번호 배열, 최대 1000건
-    CorpNumList = []
-    CorpNumList.append("6798700433")
-    CorpNumList.append("123-45-67890")
+    targetCorpNumList = []
+    targetCorpNumList.append("6798700433")
+    targetCorpNumList.append("123-45-67890")
 
-    CorpStateList = closedownService.checkCorpNums(CorpNum, CorpNumList)
+    CorpStateList = closedownService.checkCorpNums(CorpNum, targetCorpNumList)
 
     print("=" * 15 + " 휴폐업조회 - 대량 " + "=" * 15)
     print("corpNum (조회 사업자번호)")

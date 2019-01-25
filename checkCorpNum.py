@@ -25,9 +25,9 @@ try:
     CorpNum = testValue.testCorpNum
 
     # 조회할 사업자번호
-    checkCorpNum = "1234567891"
+    targetCorpNum = "1234567891"
 
-    corpState = closedownService.checkCorpNum(CorpNum, checkCorpNum)
+    corpState = closedownService.checkCorpNum(CorpNum, targetCorpNum)
 
     print("=" * 15 + " 휴폐업조회 - 단건 " + "=" * 15)
     print("corpNum (조회 사업자번호)")
