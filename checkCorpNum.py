@@ -30,12 +30,12 @@ try:
     corpState = closedownService.checkCorpNum(CorpNum, targetCorpNum)
 
     print("=" * 15 + " 휴폐업조회 - 단건 " + "=" * 15)
-    print("corpNum (조회 사업자번호)")
-    print("type (사업자 과세유형) : None-미확인, 1-일반과세자, 2-면세과세자, 3-간이과세자, 4-비영리법인, 국가기관")
-    print("typeDate (과세유형 전환일자)")
     print("state (휴폐업상태) : None-미확인, 0-등록되지 않은 사업자번호, 1-사업중, 2-폐업, 3-휴업")
+    print("corpNum (조회 사업자번호)")
+    print("typeDate (과세유형 전환일자)")
     print("stateDate (휴폐업 일자)")
-    print("checkDate (확인일자)\n")
+    print("type (사업자 과세유형) : None-미확인, 1-일반과세자, 2-면세과세자, 3-간이과세자, 4-비영리법인, 국가기관")
+    print("checkDate (국세청 최종 확인일자)\n")
 
     for key, value in corpState.__dict__.items():
         if not key.startswith("__"):
