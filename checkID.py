@@ -15,6 +15,7 @@ from popbill import ClosedownService, PopbillException
 
 closedownService = ClosedownService(testValue.LinkID, testValue.SecretKey)
 closedownService.IsTest = testValue.IsTest
+closedownService.IPRestrictOnOff = testValue.IPRestrictOnOff
 
 '''
 팝빌 회원아이디 중복여부를 확인합니다.

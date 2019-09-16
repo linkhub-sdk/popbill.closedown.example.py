@@ -15,6 +15,7 @@ from popbill import ClosedownService, PopbillException
 
 closedownService = ClosedownService(testValue.LinkID, testValue.SecretKey)
 closedownService.IsTest = testValue.IsTest
+closedownService.IPRestrictOnOff = testValue.IPRestrictOnOff
 
 '''
 휴폐업조회 단가를 확인합니다.

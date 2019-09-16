@@ -15,6 +15,7 @@ from popbill import ClosedownService, PopbillException
 
 closedownService = ClosedownService(testValue.LinkID, testValue.SecretKey)
 closedownService.IsTest = testValue.IsTest
+closedownService.IPRestrictOnOff = testValue.IPRestrictOnOff
 
 '''
 파트너 포인트충전 팝업 URL을 반환합니다.

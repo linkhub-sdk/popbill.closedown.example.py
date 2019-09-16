@@ -15,6 +15,7 @@ from popbill import JoinForm, ClosedownService, PopbillException
 
 closedownService = ClosedownService(testValue.LinkID, testValue.SecretKey)
 closedownService.IsTest = testValue.IsTest
+closedownService.IPRestrictOnOff = testValue.IPRestrictOnOff
 
 '''
 팝빌 연동회원 가입을 요청합니다.

@@ -15,6 +15,7 @@ from popbill import ClosedownService, PopbillException
 
 closedownService = ClosedownService(testValue.LinkID, testValue.SecretKey)
 closedownService.IsTest = testValue.IsTest
+closedownService.IPRestrictOnOff = testValue.IPRestrictOnOff
 
 '''
 연동회원의 담당자 목록을 확인합니다.
