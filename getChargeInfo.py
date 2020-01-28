@@ -19,6 +19,7 @@ closedownService.IPRestrictOnOff = testValue.IPRestrictOnOff
 
 '''
 연동회원의 휴폐업조회 API 서비스 과금정보를 확인합니다.
+- https://docs.popbill.com/closedown/python/api#GetChargeInfo
 '''
 
 try:

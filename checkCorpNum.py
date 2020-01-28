@@ -19,6 +19,7 @@ closedownService.IPRestrictOnOff = testValue.IPRestrictOnOff
 
 '''
 1건의 사업자에 대한 휴폐업여부를 조회합니다.
+- https://docs.popbill.com/closedown/python/api#CheckCorpNum
 '''
 
 try:
