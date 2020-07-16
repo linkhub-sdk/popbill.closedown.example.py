@@ -16,6 +16,7 @@ from popbill import ContactInfo, ClosedownService, PopbillException
 closedownService = ClosedownService(testValue.LinkID, testValue.SecretKey)
 closedownService.IsTest = testValue.IsTest
 closedownService.IPRestrictOnOff = testValue.IPRestrictOnOff
+closedownService.UseStaticIP = testValue.UseStaticIP
 
 try:
     print("=" * 15 + " 담당자 등록 " + "=" * 15)
