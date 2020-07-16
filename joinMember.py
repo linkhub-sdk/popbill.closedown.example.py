@@ -20,6 +20,7 @@ closedownService.UseStaticIP = testValue.UseStaticIP
 
 '''
 팝빌 연동회원 가입을 요청합니다.
+- https://docs.popbill.com/closedown/python/api#JoinMember
 '''
 
 try:
