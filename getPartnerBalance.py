@@ -17,6 +17,7 @@ closedownService = ClosedownService(testValue.LinkID, testValue.SecretKey)
 closedownService.IsTest = testValue.IsTest
 closedownService.IPRestrictOnOff = testValue.IPRestrictOnOff
 closedownService.UseStaticIP = testValue.UseStaticIP
+closedownService.UseLocalTimeYN = testValue.UseLocalTimeYN
 
 '''
 파트너의 잔여포인트를 확인합니다.

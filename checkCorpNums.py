@@ -17,6 +17,7 @@ closedownService = ClosedownService(testValue.LinkID, testValue.SecretKey)
 closedownService.IsTest = testValue.IsTest
 closedownService.IPRestrictOnOff = testValue.IPRestrictOnOff
 closedownService.UseStaticIP = testValue.UseStaticIP
+closedownService.UseLocalTimeYN = testValue.UseLocalTimeYN
 
 '''
 다수의 사업자에 대한 휴폐업여부를 조회합니다. (최대 1000건)

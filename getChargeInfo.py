@@ -17,6 +17,7 @@ closedownService = ClosedownService(testValue.LinkID, testValue.SecretKey)
 closedownService.IsTest = testValue.IsTest
 closedownService.IPRestrictOnOff = testValue.IPRestrictOnOff
 closedownService.UseStaticIP = testValue.UseStaticIP
+closedownService.UseLocalTimeYN = testValue.UseLocalTimeYN
 
 '''
 연동회원의 휴폐업조회 API 서비스 과금정보를 확인합니다.

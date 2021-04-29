@@ -17,6 +17,7 @@ closedownService = ClosedownService(testValue.LinkID, testValue.SecretKey)
 closedownService.IsTest = testValue.IsTest
 closedownService.IPRestrictOnOff = testValue.IPRestrictOnOff
 closedownService.UseStaticIP = testValue.UseStaticIP
+closedownService.UseLocalTimeYN = testValue.UseLocalTimeYN
 
 '''
 팝빌 연동회원 사업자의 담당자 정보(팝빌 로그인 계정)를 추가합니다.
