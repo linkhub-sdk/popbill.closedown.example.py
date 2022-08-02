@@ -30,10 +30,7 @@ try:
     # 팝빌회원 사업자번호
     CorpNum = testValue.testCorpNum
 
-    # 팝빌회원 아이디
-    UserID = testValue.testUserID
-
-    response = closedownService.getChargeInfo(CorpNum, UserID)
+    response = closedownService.getChargeInfo(CorpNum)
 
     tmp = "unitCost (조회단가) : " + response.unitCost + "\n"
     tmp += "chargeMethod (과금유형) : " + response.chargeMethod + "\n"
