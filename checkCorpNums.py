@@ -45,7 +45,7 @@ try:
         print("typeDate (과세유형 전환일자) : %s " % info.typeDate)
         print("state (휴폐업상태) : %s " % info.state)
         print("stateDate (휴폐업일자) : %s " % info.stateDate)
-        print("checkDate (국세청 최종 확인일자) : %s " % info.checkDate) + '\n'
+        print("checkDate (국세청 최종 확인일자) : %s " % info.checkDate + '\n')
 
 except PopbillException as PE:
     print("Exception Occur : [%d] %s" % (PE.code, PE.message))
