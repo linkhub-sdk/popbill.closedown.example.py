@@ -20,7 +20,7 @@ closedownService.UseStaticIP = testValue.UseStaticIP
 closedownService.UseLocalTimeYN = testValue.UseLocalTimeYN
 
 '''
-1건의 사업자에 대한 휴폐업여부를 조회합니다.
+사업자번호 1건에 대한 휴폐업정보를 확인합니다.
 - https://docs.popbill.com/closedown/python/api#CheckCorpNum
 '''
 
