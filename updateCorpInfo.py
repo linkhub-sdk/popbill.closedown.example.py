@@ -21,7 +21,7 @@ closedownService.UseLocalTimeYN = testValue.UseLocalTimeYN
 
 '''
 팝빌 연동회원의 회사정보를 수정합니다.
-- https://docs.popbill.com/closedown/python/api#UpdateCorpInfo
+- https://developers.popbill.com/reference/closedown/python/api/member#UpdateCorpInfo
 '''
 
 try:
