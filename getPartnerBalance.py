@@ -5,7 +5,7 @@ import imp
 
 imp.reload(sys)
 try:
-    sys.setdefaultencoding('UTF8')
+    sys.setdefaultencoding("UTF8")
 except Exception as E:
     pass
 
@@ -19,10 +19,10 @@ closedownService.IPRestrictOnOff = testValue.IPRestrictOnOff
 closedownService.UseStaticIP = testValue.UseStaticIP
 closedownService.UseLocalTimeYN = testValue.UseLocalTimeYN
 
-'''
+"""
 파트너의 잔여포인트를 확인합니다.
 - https://developers.popbill.com/reference/closedown/python/api/point#GetPartnerBalance
-'''
+"""
 
 try:
     print("=" * 15 + " 파트너 잔여포인트 확인 " + "=" * 15)
