@@ -4,7 +4,7 @@
 팝빌 휴폐업조회 API Python SDK Example
 
 Python 연동 튜토리얼 안내 : https://developers.popbill.com/guide/closedown/python/getting-started/tutorial
-업데이트 일자 : 2023-05-10
+업데이트 일자 : 2024-02-27
 연동 기술지원 연락처 : 1600-9854
 연동 기술지원 이메일 : code@linkhubcorp.com
 
