@@ -19,12 +19,12 @@ closedownService.UseStaticIP = testValue.UseStaticIP
 closedownService.UseLocalTimeYN = testValue.UseLocalTimeYN
 
 """
-휴폐업조회 단가를 확인합니다.
+사업자등록상태조회 (휴폐업조회) 단가를 확인합니다.
 - https://developers.popbill.com/reference/closedown/python/api/point#GetUnitCost
 """
 
 try:
-    print("=" * 15 + " 휴폐업조회 단가 확인 " + "=" * 15)
+    print("=" * 15 + " 사업자등록상태조회 (휴폐업조회) 단가 확인 " + "=" * 15)
 
     # 팝빌회원 사업자번호
     CorpNum = testValue.testCorpNum

@@ -19,7 +19,7 @@ closedownService.UseStaticIP = testValue.UseStaticIP
 closedownService.UseLocalTimeYN = testValue.UseLocalTimeYN
 
 """
-사업자번호 1건에 대한 휴폐업정보를 확인합니다.
+사업자번호 1건에 대한 사업자등록상태(휴폐업)를 확인합니다.
 - https://developers.popbill.com/reference/closedown/python/api/check#CheckCorpNum
 """
 
@@ -32,7 +32,7 @@ try:
 
     corpState = closedownService.checkCorpNum(CorpNum, targetCorpNum)
 
-    print("=" * 15 + " 휴폐업조회 - 단건 " + "=" * 15)
+    print("=" * 15 + " 사업자등록상태조회 (휴폐업조회) - 단건 " + "=" * 15)
     print(
         "taxType(사업자 과세유형) [None-미확인, 10-일반과세자, 20-면세과세자, 30-간이과세자, 31-간이과세자(세금계산서 발급사업자), 40-비영리법인, 국가기관]"
     )
