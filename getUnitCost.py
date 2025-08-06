@@ -20,7 +20,7 @@ closedownService.UseLocalTimeYN = testValue.UseLocalTimeYN
 
 """
 사업자등록상태조회 (휴폐업조회) 단가를 확인합니다.
-- https://developers.popbill.com/reference/closedown/python/api/point#GetUnitCost
+- https://developers.popbill.com/reference/closedown/python/common-api/point#GetUnitCost
 """
 
 try:
